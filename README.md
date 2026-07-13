@@ -43,8 +43,9 @@ Follow these steps to provision the infrastructure and trigger the deployment:
    cd terraform
    terraform init
    terraform apply
-
+   
    2. **Trigger the Deployment:**
+    
    Simply push your code to the `main` branch, and the GitHub Actions pipeline will automatically:
    * Build the Docker image.
    * Push the image to Amazon ECR.
@@ -56,5 +57,5 @@ After the deployment, update your kubeconfig to interact with the cluster:
 ```bash
 aws eks update-kubeconfig --region us-east-1 --name my-cluster
 kubectl get all
-'''
+```
 If everything completed successfully, your application should now be running inside your Amazon EKS cluster.
