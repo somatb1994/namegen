@@ -16,7 +16,7 @@ The project features:
 * Persistent **MongoDB** storage using StatefulSets and EBS Volumes.
 
 ## Cloud Architecture
-![Architecture Diagram](diagrams/architecture-diagram.png)
+![Architecture Diagram](architecture-diagram.png)
 
 ## Tech Stack
 * **Cloud Provider:** AWS (EKS, ECR, IAM, NLB, EBS)
